@@ -1,66 +1,99 @@
-body
-{
+body {
     background: palegoldenrod;
     margin: 0;
 }
-nav
-{
+
+nav {
     background: khaki;
     height: 150px;
-    border-bottom:2px black solid ;
-    border-top:2px black solid ;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
 }
 
-footer
-{
+/*позиционирование ссылок в шапке*/
+
+.one {
+    position: absolute;
+    left: 300px;
+    top: 45px;
+}
+
+.two {
+    position: absolute;
+    right: 300px;
+    top: 45px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    transition: 1s;
+}
+
+/*анимация в шапке*/
+
+a:hover {
+    color: crimson;
+    font-size: 60px;
+    transition: 1s;
+
+}
+
+/* Основной */
+.main_boss {
+    display: flex;
+}
+
+/* Левая часть */
+.mainL {
+    display: grid;
+    width: 80%;
+    margin: 5%;
+}
+
+/* Катинка */
+#ethree {
+    width: auto;
+}
+
+/* Допники к левой и правой части */
+.mainL_item1,
+.mainR_item1 {
+    width: 100%;
+    text-align: justify;
+}
+
+/* Правая часть */
+.mainR {
+    display: grid;
+    width: 80%;
+    margin: 5%;
+    text-align: 14px;
+}
+
+footer {
     background: beige;
-    position: relative;
-    bottom: 0;
+    position: inherit;
+    margin: 0;
     width: 100vw;
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-top:2px black solid ;
+    border-top: 2px black solid;
 }
-main
-{
-    height: 650px;
-}
-.one                       /*позиционирование ссылок в шапке*/
-{
-   position: absolute;
-    left:300px;
-    top:45px;
-}
-.two
-{
-    position: absolute;
-    right:300px;
-    top:45px;
-}
-a
-{
-    text-decoration: none;
-    color:black;
-    font-size: 40px;
-    transition: 1s;
-}
-a:hover                /*анимация в шапке*/
-{
-    color:crimson;
-    font-size:60px;
-    transition: 1s;
 
-}
-.testAn
-{
+
+.testAn {
     transition: 1s;
     font-size: 20px;
     font-weight: 900;
 }
-.testAn:hover            /*анимация имен в подвале*/
-{
-   transform: rotate(360deg);
+
+/*анимация имен в подвале*/
+
+.testAn:hover {
+    transform: rotate(360deg);
     transition: 2s;
 }

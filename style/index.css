@@ -1,0 +1,109 @@
+
+body {
+    background: linear-gradient(-45deg, #9ff7a1, #4fca33, #4a7ddc, #9b61e7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+} 
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+nav {
+    display: flex;
+    padding: 30px;
+    margin-top: -1%;
+    border-bottom: 2px rgba(0, 0, 0, 0.4) solid;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    margin-left: 80px;
+    padding: 35px;
+    background: url(../img/sport.jpg) center center/contain no-repeat;
+}
+.link{
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.one, .two{
+    margin: 0 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    transition: 1s;
+}
+
+/*анимация в шапке*/
+a:hover {
+    color: crimson;
+    font-size: 60px;
+    transition: 1s;
+
+}
+.index{
+    height: 370px;
+}
+footer {
+    margin-top: 50px;
+    background: rgba(113, 113, 113, 0.504);
+    position: relative;
+    position: inherit;
+    bottom: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top:2px black solid    
+}
+
+@media screen and (max-width: 360px){
+    footer div:nth-child(1){
+        width: 100%;
+        text-align: center;
+     }
+     .logo{
+        margin: auto;
+    }
+    .one{
+        margin: 0;
+    }
+   
+}
+@media screen and ((min-width: 361px) and (max-width: 576px)){
+    footer div:nth-child(1){
+        width: 100%;
+        text-align: center;
+     }
+    .logo{
+        margin: auto;
+    }
+}
+
+@media screen and ((min-width: 577px) and (max-width: 768px)){ 
+    footer div:nth-child(1){
+       width: 100%;
+       text-align: center;
+    }
+    .two{
+        margin-right: 0;
+    }
+    .logo{
+        margin: auto;
+    }
+}

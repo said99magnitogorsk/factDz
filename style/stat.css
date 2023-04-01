@@ -1,0 +1,187 @@
+
+body {
+    background: linear-gradient(-45deg, #9ff7a1, #4fca33, #4a7ddc, #9b61e7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+} 
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+nav {
+    display: flex;
+    padding: 30px;
+    margin-top: -1%;
+    border-bottom: 2px rgba(0, 0, 0, 0.4) solid;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    margin-left: 80px;
+    padding: 35px;
+    background: url(../img/sport.jpg) center center/contain no-repeat;
+}
+.link{
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.one, .two{
+    margin: 0 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    transition: 1s;
+}
+
+/*анимация в шапке*/
+a:hover {
+    color: crimson;
+    font-size: 60px;
+    transition: 1s;
+
+}
+/* Основная инфа */
+.main_boss {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+/* Левая часть */
+.mainL {
+    display: grid;
+    grid-template: 6% 1fr / 1fr;
+    /* max-width: 45%; */
+    margin: 2%;
+ 
+}
+
+span {
+    width: 100%;
+    height: 5%;
+}
+
+/* Катинка E3 and GITHub bot */
+#ethree, #GITHub {
+    /* width: auto; */
+    border-radius: 20px;
+}
+
+/* Допники к левой и правой части */
+.mainL_item1, .mainR_item1 {
+    /* width: 100%;
+    height: 110%; */
+    display: grid;
+    text-align: justify;
+    margin-bottom: 3%;
+    grid-template: 1fr / 1fr;
+}
+/* Правая часть */
+.mainR {
+    display: grid;
+    grid-template: 6% 1fr / 1fr;
+    /* max-width: 45%; */
+    margin: 2%;
+}
+footer {
+    margin-top: 50px;
+    background: rgba(113, 113, 113, 0.504);
+    position: relative;
+    position: inherit;
+    bottom: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top:2px black solid 
+    
+}
+
+.testAn {
+    transition: 1s;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/*анимация имен в подвале*/
+
+.testAn:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+
+@media screen and (max-width: 360px){
+    footer div:nth-child(1){
+        width: 100%;
+        text-align: center;
+     }
+     .logo{
+        margin: auto;
+    }
+    .one{
+        margin: 0;
+    }
+    #ethree,#GITHub{width: 250px;}
+    .main_boss {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .contNav{
+        padding: 15px;
+    }
+}
+@media screen and ((min-width: 361px) and (max-width: 576px)){
+    footer div:nth-child(1){
+        width: 100%;
+        text-align: center;
+     }
+    .logo{
+        margin: auto;
+    }
+    #ethree,#GITHub{width: 300px;}
+    .main_boss {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and ((min-width: 577px) and (max-width: 768px)){ 
+    footer div:nth-child(1){
+       width: 100%;
+       text-align: center;
+    }
+    .two{
+        margin-right: 0;
+    }
+    .logo{
+        margin: auto;
+    }
+    .main_boss {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+@media screen and ((min-width: 769px) and (max-width: 1200px)){ 
+    .main_boss {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

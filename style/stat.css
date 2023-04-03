@@ -7,13 +7,13 @@ body {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 } 
 
@@ -103,7 +103,6 @@ footer {
     margin-top: 50px;
     background: rgba(113, 113, 113, 0.504);
     position: relative;
-    position: inherit;
     bottom: 0;
     height: 150px;
     display: flex;
@@ -148,7 +147,7 @@ footer {
         padding: 15px;
     }
 }
-@media screen and ((min-width: 361px) and (max-width: 576px)){
+@media screen and (min-width: 361px) and (max-width: 576px){
     footer div:nth-child(1){
         width: 100%;
         text-align: center;
@@ -163,7 +162,7 @@ footer {
     }
 }
 
-@media screen and ((min-width: 577px) and (max-width: 768px)){ 
+@media screen and (min-width: 577px) and (max-width: 768px){
     footer div:nth-child(1){
        width: 100%;
        text-align: center;
@@ -179,7 +178,7 @@ footer {
         grid-template-rows: 1fr;
     }
 }
-@media screen and ((min-width: 769px) and (max-width: 1200px)){ 
+@media screen and (min-width: 769px) and (max-width: 1200px){
     .main_boss {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;

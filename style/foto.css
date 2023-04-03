@@ -6,13 +6,13 @@ body {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
@@ -66,11 +66,10 @@ a:hover {
     width: 20%;
     height: 20%;
 }
-footer {
+footer{
     margin-top: 50px;
     background: rgba(113, 113, 113, 0.504);
     position: relative;
-    position: inherit;
     bottom: 0;
     height: 150px;
     display: flex;
@@ -94,7 +93,7 @@ footer {
         text-align: center;
      }
 }
-@media screen and ((min-width: 361px) and (max-width: 576px)){
+@media screen and (min-width: 361px) and (max-width: 576px){
     .grid{
         grid-template: repeat(4, 1fr)/ 1fr 1fr;
     }
@@ -106,7 +105,7 @@ footer {
         text-align: center;
      }
 }
-@media screen and ((min-width: 577px) and (max-width: 768px)){
+@media screen and (min-width: 577px) and (max-width: 768px){
     .grid{
         grid-template: repeat(4, 1fr)/ 1fr 1fr;
     }
@@ -121,7 +120,7 @@ footer {
         text-align: center;
      }
 }
-@media screen and ((min-width: 769px) and (max-width: 1200px)){ 
+@media screen and (min-width: 769px) and (max-width: 1200px){
     .grid{
         grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
     }
